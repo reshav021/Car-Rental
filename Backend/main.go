@@ -204,7 +204,7 @@ func main() {
 	r.Handle("/api/cars", corsGetCars).Methods("GET")
 	r.Handle("/api/cars/{id}/book", corsBookCar).Methods("POST")
 
-	port := ":8080"
+	port := ":5000"
 	fmt.Printf("Server started on port %s\n", port)
 	log.Fatal(http.ListenAndServe(port, r))
 }
